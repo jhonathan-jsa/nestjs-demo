@@ -27,7 +27,14 @@ spec:
         app: nestjs-pod
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.14.2
+      - name: nodejs
+        image: node:18
         ports:
         - containerPort: 80
+        resources:
+          requests:
+            cpu: 100m
+            memory: 100Mi
+          limits:
+            cpu: 200m
+            memory: 200Mi
