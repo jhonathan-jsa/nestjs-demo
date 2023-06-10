@@ -28,9 +28,9 @@ spec:
     spec:
       containers:
       - name: nodejs
-        image: docker.io/library/node:18
+        image: node:latest
         ports:
-        - containerPort: 80
+        - containerPort: 3000
         resources:
           requests:
             cpu: 100m
