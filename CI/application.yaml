@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nestjs-application
+  namespace: argocd
+spec:
+  destination:
+    namespace: nestjs
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: .
+    repoURL: 'https://github.com/jhonathan-jsa/nestjs-demo.git'
+    targetRevision: HEAD
+  project: nestjs
