@@ -19,6 +19,7 @@ metadata:
 spec:
   replicas: 1
   selector:
+    name: nestjs-pod
     matchLabels:
       app: nestjs-pod
   template:
