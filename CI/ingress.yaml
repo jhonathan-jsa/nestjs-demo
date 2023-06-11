@@ -4,7 +4,7 @@ metadata:
   name: nestjs-ingress
   namespace: nestjs
   annotations:
-    nginx.ingress.kubernetes.io/backend-protocol: HTTPS
+    nginx.ingress.kubernetes.io/backend-protocol: HTTP
 spec:
   rules:
   - host: "apps.devkit"
