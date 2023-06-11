@@ -17,4 +17,3 @@ spec:
             name: nestjs-service
             port:
               number: 443
-              protocol: TCP
