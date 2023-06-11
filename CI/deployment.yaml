@@ -20,7 +20,6 @@ spec:
         ports:
         - containerPort: 3000
           protocol: TCP
-          port: 443
         resources:
           requests:
             cpu: 200m
