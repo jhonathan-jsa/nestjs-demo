@@ -2,17 +2,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nestjs-deploy
+  name: nestjs-app
   namespace: nestjs
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nestjs-deploy
+      app: nestjs-app
   template:
     metadata:
       labels:
-        app: nestjs-deploy
+        app: nestjs-app
     spec:
       containers:
       - name: nestjs-demo
