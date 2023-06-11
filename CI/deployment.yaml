@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: nestjs-demo
-        image: nestjs-demo:release
+        image: jsadev/nestjs-demo:release
         ports:
         - containerPort: 3000
         resources:
