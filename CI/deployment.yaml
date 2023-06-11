@@ -19,7 +19,6 @@ spec:
         image: jsadev/nestjs-demo:release
         ports:
         - containerPort: 3000
-          protocol: TCP
         resources:
           requests:
             cpu: 200m

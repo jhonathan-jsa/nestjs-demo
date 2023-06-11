@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nestjs-application2
+  name: nestjs-app
   namespace: argocd
 spec:
   destination:
