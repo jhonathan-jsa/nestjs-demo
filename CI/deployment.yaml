@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: nestjs-service
   labels:
-    run: nestjs-service
+    app: nestjs-service
   namespace: nestjs
 spec:
   ports:
@@ -11,7 +11,7 @@ spec:
     protocol: TCP
     targetPort: 3000
   selector:
-    run: nestjs-deploy
+    app: nestjs-deploy
   type: ClusterIP
 ---
 apiVersion: apps/v1
@@ -22,13 +22,12 @@ metadata:
 spec:
   replicas: 1
   selector:
-    name: nestjs-deploy
     matchLabels:
-      run: nestjs-deploy
+      app: nestjs-deploy
   template:
     metadata:
       labels:
-        run: nestjs-deploy
+        app: nestjs-deploy
     spec:
       containers:
       - name: nestjs-demo
