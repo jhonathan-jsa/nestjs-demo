@@ -19,10 +19,12 @@ spec:
         image: jsadev/nestjs-demo:release
         ports:
         - containerPort: 3000
+          protocol: TCP
+          port: 443
         resources:
           requests:
-            cpu: 100m
-            memory: 100Mi
-          limits:
             cpu: 200m
-            memory: 200Mi
+            memory: 300Mi
+          limits:
+            cpu: 300m
+            memory: 500Mi
