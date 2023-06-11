@@ -28,8 +28,8 @@ spec:
         app: nestjs-pod
     spec:
       containers:
-      - name: nodejs
-        image: node:latest
+      - name: nestjs-demo
+        image: nestjs-demo:release
         ports:
         - containerPort: 3000
         resources:
