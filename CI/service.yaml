@@ -11,5 +11,5 @@ spec:
     protocol: TCP
     targetPort: 3000
   selector:
-    app: nestjs-deploy
+    app: nestjs-service
   type: ClusterIP
