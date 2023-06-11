@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/nestjs-demo:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/nestjs-demo:release
